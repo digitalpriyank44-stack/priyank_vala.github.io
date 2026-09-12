@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyank Vala — Automation Engineer</title>
+<meta name="description" content="Priyank Vala — Automation Engineer | Siemens PLC | HMI | SCADA | Drives">
+<style>
+:root{--bg:#080808;--fg:#f4f2ee;--muted:#aaa7a0;--line:#252525;--card:#111;--soft:#171717}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 20%,rgba(255,255,255,.07),transparent 32%),radial-gradient(circle at 80% 70%,rgba(255,255,255,.035),transparent 28%);z-index:-1}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(8,8,8,.72);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);z-index:20}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:20px}
+.navlinks{display:flex;gap:26px;font-size:12px;color:#bdbab4}
+.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #4b4b4b;border-radius:999px;padding:12px 18px;font-size:12px;background:#eee;color:#080808;font-weight:700}
+.btn.dark{background:transparent;color:#fff}
+section{padding:120px 7vw}
+.hero{min-height:100vh;padding-top:140px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5vw;position:relative}
+.kicker{font-size:12px;letter-spacing:.22em;color:#a8a59e;font-weight:700;margin-bottom:24px}
+.hero h1{font-size:clamp(58px,9vw,132px);line-height:.82;letter-spacing:-.075em;text-transform:uppercase}
+.hero h1 span{display:block}
+.hero p{max-width:470px;color:#aaa7a0;line-height:1.7;margin:30px 0;font-size:15px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.heroVisual{height:min(72vh,720px);min-height:520px;border-radius:4px;position:relative;overflow:hidden;background:linear-gradient(145deg,#252525,#0d0d0d 55%,#1c1c1c);border:1px solid #303030}
+.heroVisual:before{content:"";position:absolute;width:78%;height:78%;left:11%;bottom:-4%;background:linear-gradient(180deg,#777,#eee 38%,#555 40%,#171717 90%);filter:grayscale(1);clip-path:polygon(16% 0,84% 0,100% 100%,0 100%);opacity:.72}
+.heroVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.62));pointer-events:none}
+.profilePhoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(18%) contrast(1.04);display:block}
+.visualLabel{position:absolute;left:24px;bottom:24px;font-size:10px;letter-spacing:.2em;color:#fff;z-index:2}
+.scrollHint{position:absolute;bottom:30px;left:7vw;color:#777;font-size:10px;letter-spacing:.16em}
+.headingRow{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:55px}
+.eyebrow{font-size:10px;letter-spacing:.2em;color:#777;margin-bottom:14px}
+h2{font-size:clamp(42px,6vw,82px);line-height:.9;letter-spacing:-.065em;text-transform:uppercase}
+.aboutGrid{display:grid;grid-template-columns:1fr 1.2fr;gap:8vw}
+.aboutText{font-size:clamp(23px,3vw,42px);line-height:1.1;letter-spacing:-.04em}
+.aboutSmall{color:#aaa7a0;line-height:1.8;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);padding:28px;min-height:220px;position:relative;overflow:hidden;transition:.4s transform,.4s border-color}
+.card:hover{transform:translateY(-8px);border-color:#555}
+.cardNo{font-size:10px;color:#666;letter-spacing:.2em}
+.card h3{font-size:25px;letter-spacing:-.04em;margin:50px 0 14px}
+.card p{font-size:13px;line-height:1.6;color:#98958f}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.tag{border:1px solid #343434;border-radius:999px;padding:6px 9px;font-size:10px;color:#aaa}
+.projects{background:#0b0b0b}
+.project{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border-top:1px solid var(--line);padding:35px 0}
+.projectVisual{min-height:300px;background:linear-gradient(135deg,#181818,#090909);border:1px solid #262626;display:flex;align-items:end;padding:22px;position:relative;overflow:hidden}
+.projectVisual:before{content:"PLC / HMI / SCADA";font-size:clamp(25px,4vw,60px);font-weight:900;letter-spacing:-.07em;color:#292929;position:absolute;top:35px;left:25px}
+.projectInfo{padding:18px 0 18px 40px}
+.projectInfo .num{font-size:10px;color:#666;letter-spacing:.2em}
+.projectInfo h3{font-size:clamp(30px,4vw,56px);line-height:.95;letter-spacing:-.06em;margin:18px 0}
+.projectInfo p{color:#9d9a94;line-height:1.7;font-size:14px}
+.specs{margin-top:22px;border-top:1px solid #252525}
+.spec{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #202020;font-size:11px}
+.spec span:first-child{color:#666}.spec span:last-child{text-align:right}
+.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.exp{border-left:1px solid #444;padding:0 0 30px 25px}
+.exp .date{font-size:10px;letter-spacing:.15em;color:#777}
+.exp h3{font-size:25px;margin:10px 0}
+.exp p{font-size:13px;color:#999;line-height:1.7}
+.contact{min-height:75vh;display:flex;flex-direction:column;justify-content:center}
+.contact h2{max-width:900px}
+.contactRow{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-top:60px;padding-top:30px;border-top:1px solid var(--line)}
+.email{font-size:clamp(18px,3vw,35px);letter-spacing:-.04em}
+footer{padding:25px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#666;font-size:10px;letter-spacing:.12em}
+.reveal{opacity:0;transform:translateY(35px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){
+ .nav{height:62px}.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:120px}.heroVisual{min-height:430px;height:55vh;order:-1}.scrollHint{display:none}
+ section{padding:90px 6vw}.aboutGrid,.project{grid-template-columns:1fr}.aboutSmall{margin-top:28px}.grid{grid-template-columns:1fr 1fr}.projectInfo{padding:28px 0}.timeline{grid-template-columns:1fr}.contactRow{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.hero h1{font-size:18vw}.actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo">PRIYANK.</div>
+  <div class="navlinks">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </div>
+  <a class="btn" href="Priyank_Vala_Resume-1.pdf" target="_blank">View CV</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="reveal">
+    <div class="kicker">AUTOMATION ENGINEER / INDUSTRIAL CONTROL</div>
+    <h1>Priyank<br><span>Vala.</span></h1>
+    <p>Siemens PLC Programmer focused on industrial automation, HMI & SCADA development, drive commissioning, panel testing and onsite troubleshooting.</p>
+    <div class="actions"><a class="btn" href="#projects">View My Work</a><a class="btn dark" href="#contact">Contact Me</a></div>
+  </div>
+  <div class="heroVisual reveal">
+    <img src="priyank-profile.png" alt="Priyank Vala — Automation Engineer" class="profilePhoto">
+    <div class="visualLabel">AUTOMATION ENGINEER · AHMEDABAD</div>
+  </div>
+  <div class="scrollHint">↓ SCROLL TO EXPLORE</div>
+</section>
+
+<section id="about">
+  <div class="headingRow reveal"><div><div class="eyebrow">// SYSTEM PROFILE</div><h2>Hello, I'm<br>Priyank.</h2></div></div>
+  <div class="aboutGrid reveal">
+    <div class="aboutText">Instrumentation & Control Engineering graduate building practical automation solutions with Siemens PLC, HMI, SCADA and motion systems.</div>
+    <div class="aboutSmall">Currently working as an Automation Engineer, with hands-on experience in PLC programming, HMI design, Zenon SCADA, drive testing & commissioning, onsite testing and troubleshooting. I enjoy converting machine requirements into reliable control logic and operator-friendly interfaces.</div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="headingRow reveal"><div><div class="eyebrow">// TECH STACK</div><h2>Core<br>Expertise.</h2></div></div>
+  <div class="grid reveal">
+    <article class="card"><div class="cardNo">01 / PLC</div><h3>Siemens PLC</h3><p>PLC programming and machine-control logic using TIA Portal and STEP 7.</p><div class="tags"><span class="tag">TIA Portal V19</span><span class="tag">S7-1200</span><span class="tag">S7-1500</span><span class="tag">S7-200</span></div></article>
+    <article class="card"><div class="cardNo">02 / HMI</div><h3>HMI Design</h3><p>Operator-focused screens, manual/auto controls, alarms, recipes and diagnostics.</p><div class="tags"><span class="tag">MTP</span><span class="tag">KTP</span><span class="tag">Unified</span><span class="tag">Weintek</span></div></article>
+    <article class="card"><div class="cardNo">03 / SCADA</div><h3>SCADA Systems</h3><p>Real-time visualization, alarms, trends and industrial monitoring.</p><div class="tags"><span class="tag">Zenon</span><span class="tag">21 CFR</span><span class="tag">Trends</span><span class="tag">Alarms</span></div></article>
+    <article class="card"><div class="cardNo">04 / DRIVES</div><h3>Drive Commissioning</h3><p>Parameterization, testing and commissioning of Siemens VFD and servo systems.</p><div class="tags"><span class="tag">S120</span><span class="tag">S200</span><span class="tag">V90</span><span class="tag">V20</span><span class="tag">G120</span></div></article>
+    <article class="card"><div class="cardNo">05 / MOTION</div><h3>Motion Control</h3><p>Multi-axis positioning and servo-based machine motion applications.</p><div class="tags"><span class="tag">X/Y/Z</span><span class="tag">PROFINET</span><span class="tag">Servo</span></div></article>
+    <article class="card"><div class="cardNo">06 / TESTING</div><h3>Testing & Troubleshooting</h3><p>Panel testing, I/O verification, commissioning support and field fault diagnosis.</p><div class="tags"><span class="tag">I/O Testing</span><span class="tag">Commissioning</span><span class="tag">Troubleshooting</span></div></article>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="headingRow reveal"><div><div class="eyebrow">// SELECTED WORK</div><h2>Featured<br>Projects.</h2></div></div>
+
+  <article class="project reveal">
+    <div class="projectVisual"><span class="tag">PROJECT 01 / PHARMA AUTOMATION</span></div>
+    <div class="projectInfo"><div class="num">01 / 04</div><h3>3-Axis Intelligent Drum Filling System</h3><p>Industrial positioning system for X/Y/Z motion with camera coordinates used as PLC reference and recipe-based drum positions.</p><div class="specs"><div class="spec"><span>PLC</span><span>S7-1500 CPU 1511-1 PN</span></div><div class="spec"><span>Drive</span><span>S120 CU320-2 PN</span></div><div class="spec"><span>HMI</span><span>MTP1000 Unified Comfort</span></div><div class="spec"><span>Motion</span><span>3-Axis X / Y / Z</span></div></div></div>
+  </article>
+
+  <article class="project reveal">
+    <div class="projectVisual"><span class="tag">PROJECT 02 / PHARMA AUTOMATION</span></div>
+    <div class="projectInfo"><div class="num">02 / 04</div><h3>Unicorn Blister Packaging Machine</h3><p>PLC and HMI implementation with machine controls, alarms, recipe handling, I/O testing and industrial SCADA visualization.</p><div class="specs"><div class="spec"><span>PLC</span><span>Siemens</span></div><div class="spec"><span>HMI</span><span>MTP1000</span></div><div class="spec"><span>SCADA</span><span>Zenon 21 CFR</span></div><div class="spec"><span>Focus</span><span>IO Testing / HMI / SCADA</span></div></div></div>
+  </article>
+
+  <article class="project reveal">
+    <div class="projectVisual"><span class="tag">PROJECT 03 / PACKAGING</span></div>
+    <div class="projectInfo"><div class="num">03 / 04</div><h3>MAX300 Blister Tablet Packaging</h3><p>Siemens PLC basic programming and MTP700 Basic HMI design for machine operation and monitoring.</p><div class="specs"><div class="spec"><span>PLC</span><span>S7-1200</span></div><div class="spec"><span>HMI</span><span>MTP700 Basic</span></div><div class="spec"><span>Domain</span><span>Pharma Automation</span></div></div></div>
+  </article>
+
+  <article class="project reveal">
+    <div class="projectVisual"><span class="tag">PROJECT 04 / INDUSTRIAL PLANT</span></div>
+    <div class="projectInfo"><div class="num">04 / 04</div><h3>Gypsum Recycling Plant — UAE</h3><p>Siemens PLC and HMI implementation with G120C drive testing and commissioning.</p><div class="specs"><div class="spec"><span>PLC</span><span>S7-1200</span></div><div class="spec"><span>HMI</span><span>KTP700 Basic</span></div><div class="spec"><span>Drive</span><span>G120C</span></div></div></div>
+  </article>
+</section>
+
+<section id="experience">
+  <div class="headingRow reveal"><div><div class="eyebrow">// CAREER TIMELINE</div><h2>Experience.</h2></div></div>
+  <div class="timeline reveal">
+    <div class="exp"><div class="date">01/2025 — PRESENT</div><h3>Automation Engineer</h3><p><strong>Soul Electric Pvt Ltd · Ahmedabad</strong><br>Industrial automation systems, Siemens PLC programming, HMI development, Zenon SCADA, servo/VFD commissioning, onsite testing and troubleshooting.</p></div>
+    <div class="exp"><div class="date">06/2024 — 07/2024</div><h3>Calibration Instrumentation</h3><p><strong>TESLA Testing Electrical Standards Laboratory R&D Institute Pvt Ltd · Gandhinagar</strong><br>Electrical and process instrument calibration, test documentation and measurement traceability.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="eyebrow reveal">// LET'S CONNECT</div>
+  <h2 class="reveal">Build something<br>that moves.</h2>
+  <div class="contactRow reveal">
+    <a class="email" href="mailto:priyankvala44@gmail.com">priyankvala44@gmail.com</a>
+    <div class="actions"><a class="btn" href="mailto:priyankvala44@gmail.com">Email Me</a><a class="btn dark" href="https://www.linkedin.com/in/priyank-vala-b476b9246" target="_blank">LinkedIn</a></div>
+  </div>
+</section>
+</main>
+
+<footer><span>PRIYANK VALA · AUTOMATION ENGINEER</span><span>SIEMENS · PLC · HMI · SCADA · DRIVES</span></footer>
+
+<script>
+const obs=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{document.documentElement.style.setProperty('--scroll',window.scrollY)});
+</script>
+</body>
+</html>
